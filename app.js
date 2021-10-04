@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 const numberInput = document.getElementById('number-input');
-const buttonInput = document.getElementById('guess')
-const answerResult = document.getElementById('answer-text')
+const buttonInput = document.getElementById('guess');
+const answerResult = document.getElementById('answer-text');
 
 // initialize global state
 let guessNumber = 0;
@@ -14,21 +14,23 @@ let answer = Math.floor(Math.random() * 21);
 console.log(answer);
 
 buttonInput.addEventListener('click', () => {
-    guessNumber++;
-    let num = Number(numberInput.value)
-    let answerOutput;
-    if(num === answer){
-      answerOutput = 'correct!';
-    } else if (guessNumber >= 4) {
-      answerOutput = 'out of guesses!';
-    } else if (num > answer) {
-      answerOutput = 'Over!';
-    } else if (num < answer) {
-      answerOutput = 'Under!';
-    }
+  guessNumber++;
+  let num = Number(numberInput.value)
+  let answerOutput;
+  if(num === answer){
+    answerOutput = 'correct!';
+  } else if (guessNumber >= 4) {
+    answerOutput = 'out of guesses!';
+  } else if (num > answer) {
+    answerOutput = 'Over!';
+  } else if (num < answer) {
+    answerOutput = 'Under!';
+  }
     const resultText = `You are ${answerOutput}.`;
     answerResult.textContent = resultText;
 });
+
+
 
     
     

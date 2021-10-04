@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <h1>Guess A Number!</h1>
-    <div>
+    <div id="">
         <input id="number-input" type="text">
-        <button id="guess">Guess</button>
         <p id="answer-text"></p>
+        <button id="guess">Guess</button>
+        <input type="button" value="Try Again" onClick="document.location.reload(true)">
     </div>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
-
     <script type="module" src="./app.js"></script>
 </body>
-
 </html>
