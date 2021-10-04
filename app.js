@@ -11,24 +11,23 @@ let guessNumber = 0;
   //if guess < answer "You are under"
   //if guess > answer "you are over"
 let answer = Math.floor(Math.random() * 21);
-
+console.log(answer);
 
 buttonInput.addEventListener('click', () => {
     guessNumber++;
-    Number('number-input');)
+    let num = Number(numberInput.value)
     let answerOutput;
-    if(numberInput === answer){
+    if(num === answer){
       answerOutput = 'correct!';
     } else if (guessNumber >= 4) {
       answerOutput = 'out of guesses!';
-    } else if (numberInput > answer) {
+    } else if (num > answer) {
       answerOutput = 'Over!';
-    } else if (numberInput < answer) {
+    } else if (num < answer) {
       answerOutput = 'Under!';
     }
     const resultText = `You are ${answerOutput}.`;
     answerResult.textContent = resultText;
-    
 });
 
     
