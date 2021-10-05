@@ -4,4 +4,20 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Creepster';
+    background-image: url(../assets/question\ guy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}   
+
+h1 {
+    font-size: 100px;
+}
+
+.number-input {
+    font-size: 100px;
+}
+
+.guess {
+    border: none;
 }

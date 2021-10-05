@@ -16,15 +16,17 @@
 </head>
 <body>
     <h1>Guess A Number!</h1>
-    <div id="">
+    <div id="input">
         <input id="number-input" type="text">
         <p id="answer-text"></p>
+            <section>
+                <p id="guess-area" >Guesses Left 
+                <span id="guess-counter" title="Guesses Left"></span></p>
+            </section>
         <button id="guess">Guess</button>
         <input type="button" value="Try Again" onClick="document.location.reload(true)">
     </div>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
     <script type="module" src="./app.js"></script>
 </body>
 </html>
+                
