@@ -4,7 +4,7 @@ const buttonInput = document.getElementById('guess');
 const answerResult = document.getElementById('answer-text');
 const guessNumberCounter = document.getElementById('guess-counter');
 
-console.log(guessNumberCounter);
+// console.log(guessNumberCounter);
 // initialize global state
 let guessCount = 4;
 // set event listeners 
@@ -13,7 +13,7 @@ let guessCount = 4;
   //if guess < answer "You are under"
   //if guess > answer "you are over"
 let answer = Math.floor(Math.random() * 21);
-console.log(answer);
+// console.log(answer);
 
 buttonInput.addEventListener('click', () => {
     if (guessCount >= 1) guessCount--;

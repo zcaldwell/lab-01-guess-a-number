@@ -12,19 +12,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <h1>Guess A Number!</h1>
+    <h1 id="header">Guess A Number!</h1>
     <div id="input">
         <input id="number-input" type="text">
         <p id="answer-text"></p>
-            <section>
-                <p id="guess-area" >Guesses Left 
-                <span id="guess-counter" title="Guesses Left"></span></p>
-            </section>
-        <button id="guess">Guess</button>
-        <input type="button" value="Try Again" onClick="document.location.reload(true)">
+        <p id="guess-area" >Guesses Left 
+        <span id="guess-counter" title="Guesses Left"></span></p>
+        <button id="guess" class="button">Guess</button>
+        <input type="button" class="button" value="Try Again" onClick="document.location.reload(true)">
     </div>
     <script type="module" src="./app.js"></script>
 </body>
