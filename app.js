@@ -22,6 +22,7 @@ let rightguess = 0;
 
 
 buttonInput.addEventListener('click', () => {
+    
     if (guessCount >= 1) guessCount--;
     let num = Number(numberInput.value);
     let answerOutput;
@@ -36,20 +37,20 @@ buttonInput.addEventListener('click', () => {
     } else if (num < answer) {
         answerOutput = 'Under!';
         wrongguess++;
-    console.log(answer);   
+        console.log(answer);   
     }
     const resultText = `You are ${answerOutput}.`;
     answerResult.textContent = resultText;
     guessNumberCounter.textContent = guessCount;
     rightCounter.textContent = rightguess;
     wrongCounter.textContent = wrongguess;
-
     
 });
 
 tryAgainButton.addEventListener('click', () => {
+    answer = Math.floor(Math.random() * 21);
+    // location.reload(answer);
     guessCount = 4;
-    const newAnswer = answer;
     guessNumberCounter.textContent = guessCount;
-    console.log(newAnswer);
 });
+
